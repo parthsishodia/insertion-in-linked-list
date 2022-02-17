@@ -1,0 +1,25 @@
+ 
+void main()
+ {
+	insert (30,head,3)
+	
+ }
+void insert (int data,Node head,int Pos)
+{
+	Node Add = new Node(data);
+	if(pos==0)
+	{
+		Add.next=head;
+		head=Add;
+		return;
+		
+	}
+	Node prev=head;
+	for(int i=0;i<pos-1;i++)
+{
+prev=prev.next;
+
+}
+	Add.next=prev.next;
+	prev.next=Add;
+}
